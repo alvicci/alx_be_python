@@ -7,7 +7,7 @@ A python script that calculates the simple interest earned on an investment over
 ( T ) is the time the money is invested for in years.
 """
 
-principal = 1_000
+principal = 1000
 rate = 0.05
 time = 3
 
