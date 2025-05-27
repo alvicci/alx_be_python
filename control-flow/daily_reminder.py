@@ -8,9 +8,10 @@ priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
-    case "high" if time_bound == "yes":
-        start = "Reminder"
-        end = " that requires immediate attention today!"
+    case "high":
+        if time_bound == "yes":
+            start = "Reminder"
+            end = " that requires immediate attention today!"
     case "medium" | "low":
         start = "Note"
         end = ". Consider completing it when you have free time."
