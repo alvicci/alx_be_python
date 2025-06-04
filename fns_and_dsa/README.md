@@ -120,3 +120,5 @@ Then run the scripts like this:
 ```shell
 python3 script_name.py
 ```
+
+Happy coding and keep exploring Python! 🚀
