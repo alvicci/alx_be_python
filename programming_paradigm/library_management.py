@@ -15,7 +15,7 @@ class Book:
 
 class Library:
     def __init__(self):
-        self._book = []
+        self._books = []
 
     def add_book(self, book):
         new_book = {
@@ -23,10 +23,10 @@ class Library:
             "author": book.author,
             "checkout": book.is_checked_out
         }
-        self._book.append(new_book)
+        self._books.append(new_book)
 
     def check_out_book(self, title):
-        for item in self._book:
+        for item in self._books:
             if item["title"] == title:
                 item["checkout"] = True
 
@@ -35,12 +35,12 @@ class Library:
         pass
 
     def return_book(self, title):
-        for item in self._book:
+        for item in self._books:
             if item["title"] == title:
                 item["checkout"] = False
 
     def list_available_books(self):
-        for item in self._book:
+        for item in self._books:
             if not item["checkout"]:
                 print(f"{item["title"]} by {item["author"]}")
 
