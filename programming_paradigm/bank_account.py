@@ -26,14 +26,4 @@ class BankAccount:
             return False
 
     def display_balance(self):
-        print(f"Current Balance: ${self.__account_balance}")
-
-# Creating a class with no encapsulation
-# 
-# 
-# class BankAccount:
-#     def __init__(self, account_balance):
-#         self.account_balance = account_balance
-# test = BankAccount(10)
-# test.account_balance = 20
-# print(test.account_balance)
+        print(f"Current Balance: ${float(self.__account_balance)}")
