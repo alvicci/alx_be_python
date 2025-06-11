@@ -1,11 +1,11 @@
 import unittest
-import simple_calculator
+from simple_calculator import SimpleCalculator
 
 
 class TestSimpleCalculator(unittest.TestCase):
 
     def setUp(self):
-        self.calc = simple_calculator.SimpleCalculator()
+        self.calc = SimpleCalculator()
 
     def test_addition(self):
         """Test the addition method."""
