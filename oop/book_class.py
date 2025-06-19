@@ -17,15 +17,19 @@ class Book:
         return self.__title
 
     @property
-    def __author(self):
+    def author(self):
         return self.__author
+    
+    # @author.setter
+    # def author(self, value):
+    #     self.__author = value
 
     @property
-    def __year(self):
+    def year(self):
         return self.__year
 
     def __del__(self):
-        print(f"Deleting (title of the book)") 
+        print(f"Deleting {self.__title}") 
 
 # title (str): The title of the book.
 # author (str): The author of the book.
