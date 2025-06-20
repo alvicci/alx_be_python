@@ -13,6 +13,8 @@ Task Description:
     - Demonstrate polymorphism by calling the `area()` method on different
         shape objects through a common interface.
 """
+
+
 class Shape:
     def area(self):
         raise NotImplementedError
